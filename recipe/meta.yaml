@@ -1,5 +1,5 @@
 {% set name = "nebula" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/slackhq/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 391ac38161561690a65c0fa5ad65a2efb2d187323cc8ee84caa95fa24cb6c36a
+  sha256: b16638b99d80a4ae6373f7757a0064dc0defd3f9e165617e7b5c3be9e64d3605
 
 build:
   number: 0
@@ -26,7 +26,7 @@ test:
 
 about:
   home: https://github.com/slackhq/nebula
-  summary: 'Nebula is a scalable overlay networking tool with a focus on performance, simplicity and security.'
+  summary: Nebula is a scalable overlay networking tool with a focus on performance, simplicity and security.
   description: |
     Nebula lets you seamlessly connect computers anywhere in the world.
     Nebula is portable, and runs on Linux, OSX, Windows, iOS, and Android.
