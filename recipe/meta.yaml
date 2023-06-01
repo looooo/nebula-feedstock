@@ -1,5 +1,5 @@
 {% set name = "nebula" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/slackhq/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b16638b99d80a4ae6373f7757a0064dc0defd3f9e165617e7b5c3be9e64d3605
+  sha256: c4771ce6eb3e142f88f5f4c12443cfca140bf96b2746c74f9536bd1a362f3f88
 
 build:
   number: 0
