@@ -1,0 +1,20 @@
+diff --git a/Makefile b/Makefile
+index 6922cc3..0e9e15f 100644
+--- a/Makefile
++++ b/Makefile
+@@ -120,13 +120,9 @@ bin-pkcs11: BUILD_ARGS += -tags pkcs11
+ bin-pkcs11: CGO_ENABLED = 1
+ bin-pkcs11: bin
+ 
+-bin:
+-	go build $(BUILD_ARGS) -ldflags "$(LDFLAGS)" -o ./nebula${NEBULA_CMD_SUFFIX} ${NEBULA_CMD_PATH}
+-	go build $(BUILD_ARGS) -ldflags "$(LDFLAGS)" -o ./nebula-cert${NEBULA_CMD_SUFFIX} ./cmd/nebula-cert
+-
+ install:
+-	go install $(BUILD_ARGS) -ldflags "$(LDFLAGS)" ${NEBULA_CMD_PATH}
+-	go install $(BUILD_ARGS) -ldflags "$(LDFLAGS)" ./cmd/nebula-cert
++	go build $(BUILD_ARGS) -ldflags "$(LDFLAGS)" -o ${PREFIX}/bin/nebula${NEBULA_CMD_SUFFIX} ${NEBULA_CMD_PATH}
++	go build $(BUILD_ARGS) -ldflags "$(LDFLAGS)" -o ${PREFIX}/bin/nebula-cert${NEBULA_CMD_SUFFIX} ./cmd/nebula-cert
+ 
+ build/linux-arm-%: GOENV += GOARM=$(word 3, $(subst -, ,$*))
+ build/linux-mips-%: GOENV += GOMIPS=$(word 3, $(subst -, ,$*))

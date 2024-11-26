@@ -8,7 +8,8 @@ package:
 source:
   url: https://github.com/slackhq/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 7feb8337a8ce791bb97211a70fddfc9cb936e2a9bfbb3bc8ac714c868da3fc86
-
+  patches:
+    - go_install_cross.patch  # [unix]
 build:
   number: 0
 
