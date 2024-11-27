@@ -197,5 +197,6 @@ Feedstock Maintainers
 =====================
 
 * [@MichaelKora](https://github.com/MichaelKora/)
+* [@looooo](https://github.com/looooo/)
 * [@wolfv](https://github.com/wolfv/)
 
